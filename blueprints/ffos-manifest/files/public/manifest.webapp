@@ -1,7 +1,7 @@
 {
   "version": "<%= versionNumber %>",
-  "name": "<%= projectName %>",
-  "description": "<%= projectDescription %>",
+  "name": "<%= appName %>",
+  "description": "<%= appDescription %>",
   "icons": {
     "32": "/assets/images/icons/icon-32.png",
     "60": "/assets/images/icons/icon-60.png",

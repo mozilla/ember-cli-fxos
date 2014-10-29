@@ -7,8 +7,8 @@ module.exports = {
     locals: function(options) {
         var project = this.project.pkg;
         return {
-          projectName: project.name,
-          projectDescription: project.description || '',
+          appName: project.name,
+          appDescription: project.description || '',
           authorName: project.author || '',
           versionNumber: project.version
         }
