@@ -10,17 +10,17 @@ module.exports = {
         var replacements = [];
         var appPkg = this.project.pkg;
         var pkgValues = {
-            'appName': appPkg.name, 
-            'appDescription': appPkg.description,
-            'versionNumber': appPkg.version,
-            'developerName': appPkg.author.name,
-            'developerUrl': appPkg.author.url
+            appName: appPkg.name, 
+            appDescription: appPkg.description,
+            versionNumber: appPkg.version,
+            developerName: appPkg.author.name,
+            developerUrl: appPkg.author.url
         };
 
         for (var key in pkgValues) {
           if (pkgValues.hasOwnProperty(key)) {
-                var replacement = { 
-                    match: key, 
+                var replacement = {
+                    match: key,
                     replacement: pkgValues[key] || ''
                 }
                 replacements.push(replacement);
@@ -36,7 +36,7 @@ module.exports = {
         publicTree = replace(publicTree.inputTree, {
             files: ['manifest.webapp'],
             patterns: replacements
-        }); 
+        });
 
         return this.mergeTrees([tree, publicTree], { overwrite: true });
     }
