@@ -5,7 +5,7 @@ var pickFiles = require('broccoli-static-compiler');
 var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-    name: 'ember-cli-ffos',
+    name: 'ember-cli-fxos',
     postprocessTree: function(type, tree) {
         var replacements = [];
         var appPkg = this.project.pkg;
