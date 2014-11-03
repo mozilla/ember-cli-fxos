@@ -16,4 +16,4 @@ Every FireFox OS application requires a [manifest file](https://developer.mozill
 ember g ffos-manifest
 ```
 
-This will create a `manifest.webapp` file in the app/public directory, pre-filled with any relevant information it can pull from your application's `package.json`.  
+This will create a `manifest.webapp` file in your application's /public directory. Any values that start with `@@` (e.g. `@@appName`) will be pulled from your `package.json` at build time.

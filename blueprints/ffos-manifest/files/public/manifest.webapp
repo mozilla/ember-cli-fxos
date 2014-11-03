@@ -1,7 +1,7 @@
 {
-  "version": "<%= versionNumber %>",
-  "name": "<%= appName %>",
-  "description": "<%= appDescription %>",
+  "version": "@@versionNumber",
+  "name": "@@appName",
+  "description": "@@appDescription",
   "icons": {
     "32": "/assets/images/icons/icon-32.png",
     "60": "/assets/images/icons/icon-60.png",
@@ -12,8 +12,8 @@
     "256": "/assets/images/icons/icon-256.png"
   },
   "developer": {
-    "name": "<%= authorName %>",
-    "url": ""
+    "name": "@@developerName",
+    "url": "@@developerUrl"
   },
   "launch_path": "/",
   "installs_allowed_from": ["https://marketplace.firefox.com", "*"],
