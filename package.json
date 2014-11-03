@@ -1,6 +1,7 @@
 {
   "name": "ember-cli-fxos",
   "version": "0.0.1",
+  "description": "An ember-cli addon for creating Firefox OS applications",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,12 +11,17 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla/ember-cli-fxos"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
-  "license": "MIT",
+  "author": {
+    "name": "Mozilla",
+    "url": "https://www.mozilla.org"
+  },
   "dependencies": {
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-replace": "^0.2.0",
@@ -36,7 +42,9 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "firefox",
+    "firefox os"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
