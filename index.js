@@ -6,6 +6,9 @@ var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
     name: 'ember-cli-fxos',
+    included: function(app) {
+        app.options.wrapInEval = false;
+    },
     postprocessTree: function(type, tree) {
         var replacements = [];
         var appPkg = this.project.pkg;
