@@ -10,7 +10,6 @@ ember install:addon ember-cli-fxos
 ```
 
 If you are using Ember CLI < 0.1.5:
-From the root of your ember-cli project, run:
 
 ```
 npm install ember-cli-fxos --save-dev
