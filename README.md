@@ -3,6 +3,13 @@
 This is an [ember-cli](http://www.ember-cli.com/) add-on for creating FireFox OS applications. 
 
 ## Installation
+If you are using Ember CLI >= 0.1.5:
+
+```
+ember install:addon ember-cli-fxos
+```
+
+If you are using Ember CLI < 0.1.5:
 From the root of your ember-cli project, run:
 
 ```
@@ -10,7 +17,9 @@ npm install ember-cli-fxos --save-dev
 ```
 
 ## Creating Your Manifest File
-Every FireFox OS application requires a [manifest file](https://developer.mozilla.org/en-US/Apps/Build/Manifest) in the root of your project. You can generate this file with the following command:
+Every FireFox OS application requires a [manifest file](https://developer.mozilla.org/en-US/Apps/Build/Manifest) in the root of your project.
+
+If you are using Ember CLI >= 0.1.5, the manifest file has already been created for you. If you are using an older version of Ember CLI, you can generate this file with the following command:
 
 ```
 ember g fxos-manifest
