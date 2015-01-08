@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-fxos",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An ember-cli addon for creating Firefox OS applications",
   "directories": {
     "doc": "doc",
