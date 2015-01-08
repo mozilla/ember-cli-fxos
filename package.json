@@ -25,7 +25,8 @@
   "dependencies": {
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-replace": "^0.2.0",
-    "broccoli-static-compiler": "^0.2.1"
+    "broccoli-static-compiler": "^0.2.1",
+    "parse-author": "^0.1.0"
   },
   "devDependencies": {
     "body-parser": "^1.2.0",

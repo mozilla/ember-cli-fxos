@@ -3,21 +3,32 @@
 var replace = require('broccoli-replace');
 var pickFiles = require('broccoli-static-compiler');
 var mergeTrees = require('broccoli-merge-trees');
+var parseAuthor = require('parse-author');
 
 module.exports = {
     name: 'ember-cli-fxos',
     included: function(app) {
         app.options.wrapInEval = false;
     },
+    parsePkgAuthor: function(authorData) {
+        var developerInfo = {};
+        if (typeof authorData === 'string') {
+            developerInfo = parseAuthor(authorData);
+        } else if (typeof authorData === 'object') {
+            developerInfo = authorData;
+        }
+        return developerInfo;
+    },
     postprocessTree: function(type, tree) {
         var replacements = [];
         var appPkg = this.project.pkg;
+        var pkgDeveloperInfo = this.parsePkgAuthor(appPkg.author);
         var pkgValues = {
             appName: appPkg.name, 
             appDescription: appPkg.description,
             versionNumber: appPkg.version,
-            developerName: appPkg.author.name,
-            developerUrl: appPkg.author.url
+            developerName: pkgDeveloperInfo.name || null,
+            developerUrl: pkgDeveloperInfo.url || null
         };
 
         for (var key in pkgValues) {
