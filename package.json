@@ -51,7 +51,6 @@
     "firefox os"
   ],
   "ember-addon": {
-    "configPath": "tests/dummy/config",
-    "defaultBlueprint": "fxos-manifest"
+    "configPath": "tests/dummy/config"
   }
 }
