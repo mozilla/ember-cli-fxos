@@ -1,4 +1,4 @@
-# Ember-cli-fxos
+# Ember-cli-fxos [![Build Status](https://secure.travis-ci.org/mozilla/ember-cli-fxos.png?branch=master)](http://travis-ci.org/mozilla/ember-cli-fxos)
 
 This is an [Ember CLI](http://www.ember-cli.com/) add-on for creating FireFox OS applications. 
 
