@@ -4,11 +4,15 @@ var replace = require('broccoli-replace');
 var pickFiles = require('broccoli-static-compiler');
 var mergeTrees = require('broccoli-merge-trees');
 var parseAuthor = require('parse-author');
+var commands = require('./lib/commands');
 
 module.exports = {
     name: 'ember-cli-fxos',
     included: function(app) {
         app.options.wrapInEval = false;
+    },
+    includedCommands: function() {
+        return commands;
     },
     parsePkgAuthor: function(authorData) {
         var developerInfo = {};

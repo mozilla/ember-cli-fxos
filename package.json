@@ -26,6 +26,9 @@
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-replace": "^0.2.0",
     "broccoli-static-compiler": "^0.2.1",
+    "chalk": "^1.0.0",
+    "firefox-app-validator-manifest": "^1.1.7",
+    "fs-readfile-promise": "^1.1.0",
     "parse-author": "^0.1.0"
   },
   "devDependencies": {
