@@ -13,10 +13,10 @@ ember install:addon ember-cli-fxos
 ### Manifest File
 Every FireFox OS application requires a [manifest file](https://developer.mozilla.org/en-US/Apps/Build/Manifest) in the root of your project.
 
-After installing the addon, you'll see a `manifest.webapp` file was created in your application's /public directory. Any values that start with `@@` (e.g. `@@appName`) will be pulled from your `package.json` at build time. Reference the MDN link above for additional information on configuring your manifest file.
+This addon creates a `manifest.webapp` in your application's `/public` directory. Any values that start with `@@` (e.g. `@@appName`) will be pulled from your `package.json` at build time. Reference [MDN](https://developer.mozilla.org/en-US/Apps/Build/Manifest) for additional information on configuring your manifest file.
 
 ## Validation
-After running `ember build`, your final manifest file will be compiled into the /dist directory. To validate the manifest file and check for any errors or warnings, run:
+After running `ember build`, your final manifest file will be compiled into the `/dist` directory. To validate the manifest file and check for any errors or warnings, run:
 
 `ember fxos:validate`
 
