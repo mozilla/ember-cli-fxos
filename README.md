@@ -1,6 +1,6 @@
 # Ember-cli-fxos
 
-This is an [Ember CLI](http://www.ember-cli.com/) add-on for creating FireFox OS applications. 
+This is an [Ember CLI](http://www.ember-cli.com/) add-on for creating FireFox OS applications.
 
 ## Installation
 From the root of your Ember CLI project:
@@ -22,9 +22,9 @@ After running `ember build`, your final manifest file will be compiled into the 
 *Note: The [module performing validation](https://github.com/mozilla/firefox-app-validator-manifest) is still a work in progress. It may not catch all errors. Please do file bugs as you encounter them.*
 
 ## Publishing to the Firefox Marketplace
-Before you can publish to the Firefox Marketplace, you'll need to generate authentication credentials and place them in the /config/fxos.js file that was generated for you after install.
+Before you can publish to the Firefox Marketplace, you'll need to generate authentication credentials and place them in the `/config/fxos.js` file that was generated for you after install.
 
-[Generate Development Keys](https://marketplace-dev.allizom.org/developers/api)  
+[Generate Development Keys](https://marketplace-dev.allizom.org/developers/api)
 [Generate Production Keys](https://marketplace.firefox.com/developers/api)
 
 Select 'command line' for the client type when generating your keys.
@@ -33,7 +33,7 @@ After adding your keypair to `/config/fxos.js`, you can publish to the Firefox M
 
 `ember fxos:publish --url=<url-to-published-manifest-webapp-file> --environment=development`
 
-`environment` can either be development or production. If you do not pass in this option, it will default to development.
+`environment` can either be **`development`** or **`production`**. If you do not pass in this option, it will default to `development`.
 
 The `url` option must be a published manifest file. This means you need to have deployed your application somewhere (i.e. github pages). If you don't want to pass in the `url` option each time you run the command, you can add a `publishedManifestUrl` property to your `/config/fxos.js` file. For example:
 
