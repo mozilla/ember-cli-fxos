@@ -22,7 +22,7 @@ After running `ember build`, your final manifest file will be compiled into the 
 *Note: The [module performing validation](https://github.com/mozilla/firefox-app-validator-manifest) is still a work in progress. It may not catch all errors. Please do file bugs as you encounter them.*
 
 ## Publishing to the Firefox Marketplace
-Before you can publish to the Firefox Marketplace, you'll need to generate authentication credentials and place them in the `/config/fxos.js` file that was generated for you after install.
+Before you can publish to the Firefox Marketplace, you'll need to generate authentication credentials and place them in the `/config/fxos.js` file that was generated for you after install. You'll want to add this file to your application's `.gitignore`.
 
 [Generate Development Keys](https://marketplace-dev.allizom.org/developers/api)
 [Generate Production Keys](https://marketplace.firefox.com/developers/api)
