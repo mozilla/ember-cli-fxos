@@ -29,7 +29,6 @@
     "chalk": "^1.0.0",
     "firefox-app-validator-manifest": "^1.1.7",
     "fs-readfile-promise": "^1.1.0",
-    "node-firefox-marketplace": "^0.0.1",
     "parse-author": "^0.1.0"
   },
   "devDependencies": {
@@ -52,6 +51,7 @@
     "firefox os"
   ],
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "defaultBlueprint": "fxos-manifest"
   }
 }
