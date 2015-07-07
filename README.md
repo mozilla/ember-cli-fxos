@@ -6,7 +6,7 @@ This is an [Ember CLI](http://www.ember-cli.com/) add-on for creating Firefox OS
 From the root of your Ember CLI project:
 
 ```
-ember install:addon ember-cli-fxos
+ember install ember-cli-fxos
 ```
 
 ## Configuration
